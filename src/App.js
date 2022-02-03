@@ -1,10 +1,18 @@
 import "./App.css";
-import OpenLayersMap from "./components/OpenLayersMap";
+import Header from "./components/Header";
+import NavBar from "./components/NavBar";
+import MapContainer from "./components/MapContainer";
+import InfoBar from "./components/InfoBar.js";
 
 function App() {
   return (
-    <div className="App">
-      <OpenLayersMap />
+    <div className="App col">
+      <Header />
+      <div className="row grow">
+        <NavBar />
+        <MapContainer />
+        <InfoBar />
+      </div>
     </div>
   );
 }
